@@ -15,32 +15,45 @@
      
     <script>
   
-    //    var users = ["Paul", "Leto", "Jessica"];   Duncan appears at end
-    //     users.push("Duncan");
-    //    document.write(users);
-
-    // var users = ["Paul", "Leto", "Jessica"];   Paul is removed
-    //     users.shift();
-    //    document.write(users);
-
-    //    var users = ["Paul", "Leto", "Jessica"];   Jessica is removed
-    //     users.pop();
-    //    document.write(users);
-
-
-    //    var users = ["Paul", "Leto", "Jessica"]; Duncan at start
-    //     users.unshift("Duncan");
-    //    document.write(users);
-
-    // var users = ["Paul", "Leto", "Jessica"]; reverse the volume order
-    //     users.reverse();
-    //    document.write(users);
-
-
-    var users = ["Paul", "Leto", "Jessica"];  
-    var slice = users.slice(0,1);
-       document.write(slice);
+        // first example
+        // var a = 5;
+        // var b = 10;
         
+        // function myFunction() {
+        //    var c = a * b;
+        //    document.write(c);
+        // }
+
+        // myFunction();
+
+        var score = 0;
+        var lives = 10;
+        var gameOver = false;
+
+
+        // lives count down for every use of function
+        
+        function lifeLost() {
+            score = 0;
+            lives--;
+            gameOver = true;
+            document.write("<h2>Game Over. You have " + lives + " lives left.</h2>");
+
+            }
+
+            lifeLost();
+            lifeLost();
+            lifeLost();
+            lifeLost();
+            lifeLost();
+            lifeLost();
+            lifeLost();
+            lifeLost();
+            lifeLost();
+            lifeLost();
+
+
+
     </script>
 
 
