@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logical Operators</title>
+    <title>Switch Statements</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
@@ -16,16 +16,28 @@
 
     <script>
        
-       var number1 = 10;
-       var number2 = 20;
+       var month = 'October';
 
-       if(number1 != number2 ) {
-            document.write("<h2>Condition is true</h2>");
+       switch(month) {
+            case 'January':
+                document.write('Happy New Year');
+                break;
+
+            case 'July':
+                document.write('Half way through the year');
+                break;
+
+                case 'November':
+                case 'December':
+                document.write('Nearly the new year');
+                break;
+                
+            default:
+            document.write('The month is ' + month);
+                break;
+
 
        }
-
-
-    //    Operators: && for more than one condition, ! for not; i.e. != or !< is not equal to or not less than. 
         
     </script>
 
